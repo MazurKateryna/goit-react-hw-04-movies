@@ -31,8 +31,19 @@ class HomePage extends Component {
                   activeClassName="movies-item-link-active"
                   to={`${match.url}movies/${movie.id}`}
                 >
-                  {movie.name}
+                  {movie.title}{movie.name}
+                <div>
+                  {movie.poster_path && (
+                    <img
+                      className="details-image"
+                      src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                      alt={movie.title}
+                      width="80"
+                    />
+                  )}
+                </div>
                 </NavLink>
+                
               </li>
             ))}
           </ul>

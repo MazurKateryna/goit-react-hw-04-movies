@@ -19,7 +19,7 @@ const fetchMovieTrending = () => {
 
 const fetchMovieDetails = movieId => {
   return axios
-    .get(`${baseURL}/movie/${movieId}?api_key=${API_key}&language=en-US`)
+    .get(`${baseURL}/movie/${movieId}?api_key=${API_key}`)
     .then(response => response.data);
 };
 

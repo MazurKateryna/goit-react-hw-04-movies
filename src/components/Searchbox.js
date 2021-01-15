@@ -18,7 +18,6 @@ export class Searchbox extends Component {
   handleSubmit = e => {
     e.preventDefault();
     this.props.onSubmit(this.state.value);
-    this.setState({ value: '' });
   };
 
   render() {
@@ -30,7 +29,7 @@ export class Searchbox extends Component {
             type="text"
             value={this.state.value}
             onChange={this.handleChange}
-            placeholder="Search movies"
+            placeholder='Search movies'
           />
           <button
             type="submit"

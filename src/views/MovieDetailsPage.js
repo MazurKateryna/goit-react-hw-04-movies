@@ -56,14 +56,14 @@ class MovieDetailsPage extends Component {
                 className="details-image"
                 src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
                 alt={movie.title}
-                width="300"
+                width="250"
               />
             )}
           </div>
           <div className="details-content-wrapper">
             <h2 className="title">{movie.title}</h2>
             <span className="user-score">
-              User score: {movie.vote_average * 10}%
+              User score: {movie.vote_average}%
             </span>
             <h3 className="over-view-title">Overview</h3>
             <p className="over-view">{movie.overview}</p>

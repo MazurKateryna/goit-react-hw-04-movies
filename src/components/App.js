@@ -6,15 +6,14 @@ import routes from '../routes';
 import Layout from './Layout';
 
 const HomePage = lazy(() =>
-  import('../views/HomePage' /* webpackChunkName: "HomePage" */),
+  import('../views/HomePage'),
 );
 const MoviesPage = lazy(() =>
-  import('../views/MoviesPage' /* webpackChunkName: "MoviesPage" */),
+  import('../views/MoviesPage'),
 );
 const MovieDetailsPage = lazy(() =>
   import(
-    '../views/MovieDetailsPage' /* webpackChunkName: "MovieDetailsPage" */
-  ),
+    '../views/MovieDetailsPage'),
 );
 
 function App() {
